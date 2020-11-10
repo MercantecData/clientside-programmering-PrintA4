@@ -33,6 +33,13 @@ p {
     color: black;
   }
 
+  #time {
+    color: rgb(66, 167, 235);
+    text-align: right;
+    margin-top: auto;
+    margin-top: 0em;
+  }
+
   
 
 
