@@ -5,38 +5,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bro</title>
+    <title>Fysik formler</title>
 </head>
 <body>
     
 
     <div class="task">
         
-            <a href="index.html"><i class="fa fa-fw fa-home"></i> Hjem</a>
-            <a href="fysik.html"><i class="fa fa-pie-chart"></i> Fysik Formler</a>
-            <a href="demo.html"><i class="fa fa-wrench"></i> Demo</a>
-            <p id="time"></p>
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Hjem</a>
+        <a href="fysik.html"><i class="fa fa-pie-chart"></i> Fysik Formler</a>
+        <a href="demo.html"><i class="fa fa-wrench"></i> Demo</a>
+        <a href="live.html"><i class="fa fa-video-camera"></i> Livestream</a>
+        <p id="time"></p>
+
       </div>
     
     <h1>Fysik formler</h1>
     <p>Herinde kan du læse om de formler der bliver brugt under byggelsen af en bro.</p>
-    <table>
-        <tr>
-            <td> </td>
 
+    <table width="100%" border="1">
+
+        <tr>
+            <td style="font-size:15px " style="font-family: Verdana;"> 
+                <img src="billeder/lilbelt.jpg" alt="Billede af lillebælts broen" width="610" height="475" align="right">
+                <h2>Vindstyrke beregner</h2>
+                Nedenfor kan du indsætte værdier om en lastbils vægt samt vindstyrke af dine mål. <br>
+                Du vil få et svar om vindstyrken er nok til at kunne vælte en last bil med den givende vægt. <br>
+                <br>
+                <form method="GET">
+                    <label> Vindstyrke : </label><input type="text" id="vind" name="vindstyrke" placeholder="0.0" > m/s <br>
+                    <label> Køretøjs-vægt : </label><input type="text" id="vægt" name="vægt" placeholder="0" > kg <br>
+                    <br>
+                    
+                    <button onclick="beregn()">Beregn</button>
+
+                    <div id="svar" >
+                        <p> </p>
+
+                    </div>
+                    <br>
+                    <br>
+                    <h2>Udvideslse af asfalt på en bro</h2>
+                    På de få varme sommerdage vi har i Danmark, kan Danmarks broer uddvide sig. <br>
+                    På begge ender af en bro vil der sidde 2 metalplader, som forhindrer uvidelsen af broen bliver for stor. 
+                    
+
+            </td>
         </tr>
+
+        
 
     </table>
 
-    <form method="GET" action="https://madsbock-formtester.azurewebsites.net/">
-        <input type="text" name="username">
-        <input type="password" name="password">
-        <input type="submit" value="Send">
+       
 
 
 
     </form>
-   
 </body>
 <script src="java.js"></script>
 </html>
